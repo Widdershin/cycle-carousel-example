@@ -1,3 +1,14 @@
 .hello-world {
   color: #663399;
 }
+
+.carousel {
+  height: 550px;
+  position: relative;
+}
+
+.cat {
+  padding: 10px;
+  transition: all 1s linear;
+  position: absolute;
+}
