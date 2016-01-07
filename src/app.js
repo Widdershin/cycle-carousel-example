@@ -15,14 +15,15 @@ const carouselItems = [
 
 function renderImage (url, index, key, change) {
   return (
-    img('.carouselItem', {
+    img('.carousel-item', {
       key,
       props: {src: url, alt: url, height: '500', width: '400'},
       style: {
+        flex: '.00001',
         opacity: '0',
         transition: 'opacity 2s',
-        delayed: {opacity: '1', order: index},
-        remove: {display: 'none', order: 100}
+        delayed: {opacity: '1', order: index, flex: 1},
+        remove: {display: 'none', order: 100, flex: 1}
       }
     })
   );
